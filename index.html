@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programování se zařízením micro:bit</title>
+
+    <link rel="stylesheet" type="text/css" href="Styly.css">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="obrazkyprojekt/logo.png" alt="Logo školy">
+
+            <h1>
+                Martin Luczka
+            </h1>
+            
+            <nav>
+                <a target="_blank" class="second" href="index.html">Domů</a>
+                <a target="_blank" class="second" href="omne.html">O mně</a>
+                <a target="_blank" class="second" href="kontakt.html">Kontakt</a>
+            </nav>
+
+    </header>
+
+    <nav class="main">
+        <div>
+            <a class="odkazy" href="#domu">Domů</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#microbit">Micro:bit</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#micropython">MicroPython</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#jakprogramovat">Jak programovat?</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#video">Výstupní video</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#letak">Propagační leták</a>
+        </div>
+        
+        <div>
+            <a class="odkazy" href="#cviceni">Cvičení</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#citani">Čítání od 0 do 9</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#reseni1">Řešení</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#kostka">Hrací kostka</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#reseni2">Řešení</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#displej">Animace displeje</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#reseni3">Řešení</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#LED">LED ON/OFF</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#reseni4">Řešení</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#radio">Představení rádia</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#reseni5">Řešení</a>
+        </div>
+
+        <div>
+            <a class="odkazy" href="#zajimavosti">Zajímavosti</a>
+        </div>
+
+    </nav>
+
+    <section>
+        
+        <h2 id="domu">Programování se zařízením micro:bit</h2>
+
+        <p>Tato webová stránka představuje <b>ucelené prostředí pro prezentaci</b> některých částí z mého výstupní projektu do předmětu Výpočetní technika.</p>
+        <p>Stránka vznikla jako jedna z částí mého závěrečného projektu.</p>
+        <p>S <b>micro:bitem</b> jsem se setkal již ke konci prvního ročníku. Zaujala mě <b>jednoduchost programování v blocích</b>, ale zároveň také možnost vytvoření komplexnějších programů.  </p>
+        <p>Cílem tohoto webu je <b>přiblížit návštěvníkům můj projekt</b>. Hlavní částí tohoto projektu je <a target="_blank" href="souboryprojekt/Formátovaný dokument - Luczka.pdf">formátovaný dokument</a>, který slouží jako takový <b>učební text</b>. Nachází se v něm samotné představení <b>micro:bitu</b>. Dále také <b>představení prostředí</b>, ve kterých je možno micro:bit programovat a samozřejmě samotná <b>cvičení</b>. Těch je <b>5</b> a mají prezentovat <b>základní funkce</b> micro:bitu. Cílem dokumentu bylo také představit <b>základní principy programování</b>.</p>
+        
+        <img class="microbitlogo" src="obrazkyprojekt/logo_microbit.png" alt="Micro:bit logo">
+        <img class="pythonlogo" src="obrazkyprojekt/micropython_logo.png" alt="MicroPython logo">
+
+        <div class="mezera0"></div>
+
+        <h2 id="microbit">Micro:bit</h2>
+
+        <p>Micro:bit je v podstatě takový <b>kapesní počítač</b>. Je to zařízení, se kterým se můžeme seznámit 
+            se základními principy programování. Můžeme jej programovat jak v <b>blocích</b>, tak i v samotném 
+            <b>kódu</b> - <b>MicroPython</b> či <b>JavaScript</b>.</p>
+
+        <p> Micro:bit jako takový vyšel <b>ve dvou verzích</b>.</p>
+
+        <p> Druhá verze se oproti té první liší <b>mírně většími rozměry</b> a také přidáním některých funkcí. Navíc je tu <b>mikrofon</b> na
+            snímání zvuku, <b>reproduktor</b>, <b>dotykový senzor</b> a úsporný režim. </p>
+
+        <p>Micro:bit je tvořen <b>5 x 5 displejem</b> vytvořeným z LED diod. 
+            Dále jsou zde také dvě <b>programovatelná tlačítka</b> na bocích displeje. 
+            Součástí zařízení je také <b>dotykové logo</b> na přední straně a také <b>programovatelné piny</b> na spodu. </p>
+
+            <h3>Micro:bit zepředu:</h3>
+            <img class="zepredu" src="obrazkyprojekt/microzepredu.jpg" width="35%" alt="Micro:bit zepředu">
+
+            <h3>Micro:bit zezadu:</h3>
+            <img class="zezadu" src="obrazkyprojekt/microzezadu.jpg" width="35%" alt="Micro:bit zezadu">
+        
+        <div class="mezera0"></div>
+        
+        
+        <h2 id="micropython">MicroPython</h2>
+
+        <p>MicroPython je <b>programovací jazyk</b>, který je do značné míry kompatibilní s <b>Pythonem 3</b>. Řekl 
+            bych, že o Pythonu jste už možná někdy slyšeli. MicroPython je právě optimalizován na práci 
+            s <b>mikrokontroléry</b>.</p>
+
+        <p>Tento jazyk byl vytvořen australským programátorem <b>Damienem
+            Goeorgem</b> po úspěšné kampani v roce <b>2013</b> na crowdfundingové platformě <b>Kickstarter</b>.</p>
+
+        <p>První vydání se uskutečnilo <b>3. května</b> roku <b>2014</b>. Verze pro micro:bit byla vytvořena v roce <b>2016</b>.</p>
+
+        <h3>Loga MicroPythonu:</h3>
+        <img class="pythonlogo1" src="obrazkyprojekt/MicroPython_ logo.png" width="35%" alt="MicroPython logo">
+        <img class="pythonlogo2" src="obrazkyprojekt/micropython_logo.png" width="35%" alt="MicroPython logo">
+
+        <h3>Tvůrce MicroPythonu Damien George:</h3>
+        <img class="damien" src="obrazkyprojekt/damien_george.jpg" width="35%" alt="Damien George">
+
+
+        <div class="mezera0"></div>
+
+
+        <h2 id="jakprogramovat">Jak programovat?</h2>
+
+        <p>Micro:bit můžeme programovat dvěma způsoby: <b>bloky</b> nebo za pomocí <b>kódu</b>.
+            Kódem se v našem případě myslí <b>MicroPython</b>.</p>
+        
+        <p>Obě prostředí mají své <b>výhody i nevýhody</b>. Pojďmě si napřed představit <b>bloky</b>.</p>
+
+        <p>Bloky jsou podle funkce <b>barevně 
+            odlišeny</b> a dají se i různě upravovat. Toto prostředí je skvělé pro <b>jednoduché programy</b>, které 
+            lze s micro:bitem vytvořit.</p>
+
+        <p><b>Prostředí MakeCode</b>, ve kterém bloky programuje najdeme na tomto <b>odkazu</b>: <a target="_blank" href="https://makecode.microbit.org/">Prostředí MakeCode</a></p>
+        
+        <h3>Popis prostředí MakeCode:</h3>
+        <img class="makecode" src="obrazkyprojekt/Prostředí MakeCode.png" width="60%" alt="Prostředí MakeCode">
+
+        <p>Dále zde máme již zmíněný <b>MicroPython</b>. Pro řešení některých problemů bude kód mnohem <b>elgantnější</b>.</p>
+        
+        <p> Programování v kódu se na první pohled zdá velmi 
+            složité, ale jsem si jist, že na příkladech <b>vše pochopíte</b>.</p>
+
+        <p><b>Prostředí Python Editor</b> najdete na tomto odkazu: <a target="_blank" href="https://python.microbit.org/v/3">Python Editor</a> </p>
+
+            <h3>Popis prostředí Python Editor:</h3>
+            <img class="pythonedit" src="obrazkyprojekt/Prostředí Kód.png" width="60%" alt="Prostředí Python Editor">
+       
+        <div class="mezera0"></div>
+
+
+        <h2 id="video">Video představující výstupní projekt</h2>
+
+        <p>Video jsem pojal dost <b>informativně</b>. Projekt jsem ve videu představil a také jsem
+        zdůvodnil jeho volbu. Ke konci videa také došlo na <b>doporučení</b> některých <b>zdrojů</b> a <b>zajímavosti</b>.</p>
+
+        <h3>Video prezentace mého projektu:</h3>
+        <iframe class="video" width="738" height="415" src="https://www.youtube.com/embed/AmIxPrUWv3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <div class="mezera0"></div>
+
+        <h2 id="letak">Propagační leták</h2>
+
+        <p>Leták jsem pojal dost <b>propagačním způsobem</b>. </p>
+        <p>Jsou v něm představeny a ukázány oba dva možné <b>způsoby programování micro:bitu</b>.</p>
+        
+        <h3>Leták propagující micro:bit:</h3>
+        <img class="letak" src="obrazkyprojekt/Propagační leták.png" alt="Propagační leták">
+
+        <div class="mezera0"></div>
+
+
+        <h2 id="cviceni">Předmluva ke cvičením</h2>
+
+        <p>Cvičení zde budou koncipovány tak, že prvně bude odkaz s <b>krátkým zadáním úlohy</b>. Návštěvníci 
+        stránky poté mohou <b>zkusit úlohu naprogramovat</b>. Je jedno jakým způsobem, existuje jich celá
+        řada. </p>
+
+        <p>Tento odkaz bude mít <b>název dané úlohy</b>. Pod zadáním bude také <b>přiloženo video</b>, toto video si 
+        návštěvníci mohou pustit, aby se i podívali na to, co se budou snažit naprogramovat. </p>
+
+        <p><b>Pod odkazem</b> dané úlohy se nachází odkaz <b>Řešení</b>, na tomto odkazu návštěvnící najdou
+        <b>řešení úlohy v blocích i v kódu</b>.</p>
+
+        <p>Pokud by návštěvníci řešení nerozumněli, nic se neděje. Můžou se podívat na podrobné vysvětlení
+        do <a target="_blank" href="souboryprojekt/Formátovaný dokument - Luczka.pdf">formátovaného dokumentu</a>.</p>
+
+        <p><b>Přeji všem úspěšné řešení daných úloh.</b></p>
+        <img class="odsazeni" src="obrazkyprojekt/good luck.jpg" alt="Hodně Štěstí!">
+        
+        <div class="mezera0"></div>
+
+
+        <h2 id="citani">Čítání od 0 do 9</h2>
+
+        Tahle úloha je opravdu <b>jednoduchá</b>, zkuste se nad ní zamyslet a <b>určitě na to přijdete</b>.
+        
+        <p>Úkolem je vytvořit program, který nám bude neustále <b>čítat a zobrazovat čísla od 0 do 9</b>.</p>
+
+        <p>Při startu si nechte také zobrazit nějaký <b>text či emotikon</b>, aby jste se ujistili, že Vám micro:bit
+        funguje.</p>
+
+        <iframe class="video" width="738" height="415" src="https://www.youtube.com/embed/8yI3x4ZHioo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <div class="mezera0"></div>
+
+
+        <h2 id="reseni1">Čítání od 0 do 9 - řešení</h2>
+
+        <h3>Řešení v blocích:</h3>
+        <img class="odsazeni1" src="obrazkyprojekt/Čítání od 0 do 9.png" alt="Čítání od 0 do 9 - bloky">
+
+        <h3>Řešení v kódu:</h3>
+        <img class="odsazeni1" src="obrazkyprojekt/čítání od 0 do 9 kód.png" alt="Čítání od 0 do 9 - kód">
+
+
+        <div class="mezera0"></div>
+        
+
+        <h2 id="kostka">Hrací kostka</h2>
+
+        <p>Další úloha je <b>o něco složitější</b>, ale myslím si, že na ní taky přijdete.</p>
+
+        <p>Naprogramujeme si, respektive vy si naprogramujete, <b>hrací kostku</b>.</p>
+
+        <p>Budeme chtít, aby taková hrací kostka <b>zaznamenala zatřesení micro:bitem</b> a <b>zobrazila číslo</b> od 1 do 6.</p>
+
+        <p>Pokud padne <b>číslo 6</b>, tak program <b>"háže" dál a hodnoty hodů sčítá</b>.</p>
+
+        <p>Taková 6 nám může padnout v tomto programu max. <b>třikrát</b>, takže <b>nejvyšší možné číslo bude 18</b>, podaří se Vám ho hodit?</p>
+
+        <p>Dále už jenom můžete přidat, že při nějaké vstupové kombinaci <b>zhasne displej</b> a <b>jednočíselné hodnoty se vymažou</b>.</p>
+
+        <iframe class="video" width="738" height="415" src="https://www.youtube.com/embed/fBPHRY1wY_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+        <div class="mezera0"></div>
+
+
+        <h2 id="reseni2">Hrací kostka - řešení</h2>
+
+        <h3>Řešení v blocích:</h3>
+        <img class="odsazeni1" src="obrazkyprojekt/hraci kostka blok.png" width="45%" alt="Hrací kostka - bloky">
+
+        <h3>Řešení v kódu:</h3>
+        <img class="odsazeni1" src="obrazkyprojekt/kostka kód.png" width="45%" alt="Hrací kostka - kód">
+
+
+        <div class="mezera0"></div>
+
+
+        <h2 id="displej">Animace displeje</h2>
+
+        <p>V této úloze si <b>pohrajeme s displejem</b>, s tím jde u micro:bitu vymýšlet spostu věcí.</p>
+
+        <p>Tato úloha bude již <b>náročnější</b>, takže se pravděpodobně budete muset <b>podívat do učebních textů</b>.</p>
+
+        <p>Je jedno, jaké použijete vstupy, to je čistě na Vás.</p>
+
+        <p>Budeme chtít, aby se nám postupně rozsvěcovala <b>prostředí řada i prostřední sloupec</b>.</p>
+
+        <p>Vytvořte podmínku, aby jedna řada <b>vynechávala či vymazávala prostřední LED</b> diodu.</p>
+
+        <p>Při dalším vstupu se zhasne celý displej a postupně se rozsvítí a poté zhasne <b>řada do úhlopříčky</b>.</p>
+
+        <p>Při tomto všem chceme, aby se při <b>hlasitém zvuku</b> (většinou tlesknutí či klepnutí) displej zhasl.</p>
+
+        <iframe class="video" width="738" height="415" src="https://www.youtube.com/embed/KqzDni-IHU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+        <div class="mezera0"></div>
+
+
+        <h2 id="reseni3">Animace displeje - řešení</h2>
+
+        <h3>Řešení v blocích:</h3>
+        <img class="odsazeni1" src="obrazkyprojekt/animace - bloky.png" width="50%" alt="Animace displeje - bloky">
+
+        <h3>Řešení v kódu:</h3>
+        <img class="odsazeni1" src="obrazkyprojekt/displej kód.png" width="40%" alt="Animace displeje - kód">
+
+        <div class="mezera0"></div>
+
+
+        <h2 id="LED">LED ON/OFF</h2>
+
+        <p>Po náročné předchozí úloze si trochu oddychneme.</p>
+
+        <p>Zkusíme si sestavit a naprogramovat program, který bude pracovat s piny našeho micro:bitu.</p>
+
+        <p>Na sestavení tohoto cvičení, mimo simulátor pragramovacího prostředí, budete potřebovat
+        nějaké <b>propojovací drátky</b>. Já jsem navíc na spojení využil <b>nepájivé pole</b>.</p>
+
+        <p>V tomto cvičení budeme <b>zhasínat a rozsvěcovat LED diodu</b>, ale ne tu na displeji.</p>
+
+        <p>Nejdřív budeme chtít vytvořit nějakou <b>vodící sekvenci</b>, která nás provede možnostmi našeho programu.</p>
+
+        <p>Tuto část nechávám kompletně na Vás.</p>
+
+        <p>Při stistku jednoho tlačítka budeme chtít LED <b>rozsvítit</b>, při stisku druhého <b>zhasnout</b>.</p>
+
+        <p>Pokud budeme poté nějaký vstup držet, tak se nám bude LED dioda <b>zhasínat a rozsvícet automaticky</b>.</p>
+
+        <p>Dále poradím předřadit k LED diodě nějaký <b>ochranný odpor</b>. <b>GND se připojuje ke katodě a pin poté k anodě</b>.</p>
+
+        <p>Kde je na LED diodě <b>anoda a katoda</b> a jakou <b>hodnotu odporu</b> vybrat, tak to už <b>nechám na Vás</b>.</p>
+
+        <iframe class="video" width="738" height="415" src="https://www.youtube.com/embed/sMX9eoo5lo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+        <div class="mezera0"></div>
+
+
+        <h2 id="reseni4">LED ON/OFF - řešení</h2>
+
+        <h3>Řešení v blocích:</h3>
+        <img class="odsazeni1" src="obrazkyprojekt/LED ON OFF.png" width="35%" alt="LED ON/OFF - bloky">
+
+        <h3>Rešení v kódu:</h3>
+        <img class="odsazeni1" src="obrazkyprojekt/LED ON OFF kód.png" width="25%" alt="LED ON/OFF - kód">
+
+
+        <div class="mezera0"></div>
+
+
+        <h2 id="radio">Představení rádia</h2>
+
+        <p>Jak už název napovídá, tak v tomto cvičení si představíme <b>rádio</b> a jeho <b>základní funkci</b>.</p>
+
+        <p>Na toto cvičení jsou potřeba <b>2 micro:bity</b>, takže bych řekl, že většina z Vás bude <b>řešit v simulátoru</b>.</p>
+
+        <p>Toto cvičení je popravdě o <b>něco lehčí v blocích</b> než v kódu, řešení cvičení v kódu je zde <b>trochu zjednodušené</b>.</p>
+
+        <p>Když jsou potřeba 2 micro:bity, tak jsou také potřeba <b>2 programy</b>.</p>
+
+        <p>Oba dva micro:bity při startu <b>zobrazí jiného smajlíka</b>, aby jsme poznali, který je který.</p>
+
+        <p>Vysílač při stiskem jednoho tlačítka <b>pošle náhodné číslo</b> v rozsahu 0 až 9. Stiskem druhého pošle <b>jakoukoli zprávu</b>.</p>
+
+        <p><b>Přijímač poté zprávy zobrazí</b> a podle druhu zprávy zobrazí <b>libovolného smajlíka</b>.</p>
+
+        <p>Nezapomeňte na <b>stejnou skupinu rádia</b> :D.</p>
+
+        <iframe class="video" width="738" height="415" src="https://www.youtube.com/embed/BW_6vqW_TSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+        <div class="mezera0"></div>
+
+
+        <h2 id="reseni5">Představení rádia - řešení</h2>
+
+        <h3>Řešení v blocích:</h3>
+        <img class="vysilac" src="obrazkyprojekt/Rádio do blok.png" width="20%" alt="Rádio - vysílač - bloky">
+        <img class="prijimac" src="obrazkyprojekt/Rádio od blok.png" width="20%" alt="Rádio - přijímač - bloky">
+
+        <h3>Řešení v kódu</h3>
+        <img class="vysilac0" src="obrazkyprojekt/Radio do kod.png" width="50%" alt="Rádio - vysílač - kód">
+        <img class="prijimac" src="obrazkyprojekt/radio od kod.png" width="40%" alt="Rádio - přijímač - kód">
+
+
+        <div class="mezera0"></div>
+        <div class="mezera0"></div>
+
+
+        <h2 id="zajimavosti">Zajímavosti</h2>
+
+        <p>V této části ještě připomenu, to co jsem zmiňoval <b>ve videu</b> a <b>přiložím odkazy</b>.</p>
+
+        <h3>Microbiti</h3>
+
+        <p>Při svém prouzdání po internetu jsem narazil na opravdu <b>pěkně zpracovanou webovou stránku</b>, na které
+        se nachází spousta <b>řešených úloh, jak v blocích, tak v kódu</b>. Jde zde také představeno <b>mnoho projektů</b>,
+        které jsou s micro:bitem spojeny.
+        </p>
+
+        <p>Zde přikládám <b>odkaz na zmíněnou stránku</b>: <a target="_blank" href="https://www.microbiti.cz/">Microbiti</a></p>
+
+        <h3>Micro:battle</h3>
+
+        <p>Dále jsem chtěl zmínit <b>youtubovou sérii</b> od slovenského youtubera <b>GogoManTV</b>.</p>
+
+        <p>Série se nazývá <b>Micro:battle</b> a díl je vždy <b>rozhovor se známou osobností</b>.</p>
+
+        <p>V části videa vždy právě představují nějaké <b>zařízení ovládané micro:bitem</b>.</p>
+
+        <p>Většinou je to nějaká <b>hra či dovednost</b>, ve kterém proti sobě můžou <b>soupeřit</b>.</p>
+
+        <h3>Zde jsou poté jednotlivé díly, pokud Vás koncept zaujal:</h3>
+
+        <p><a target="_blank" href="https://www.youtube.com/watch?v=Eyr-geK-hPw&ab_channel=GoGoManTV">Ako dokáže VR oklamať MOZOG? - GoGo vs Brngi │ micro:battle #1</a></p>
+
+        <p><a target="_blank" href="https://www.youtube.com/watch?v=kq7v1HTrulw&ab_channel=GoGoManTV">Bude zo mňa hudobný producent? - GoGo vs Yaksha │ micro:battle #2</a></p>
+
+        <p><a target="_blank" href="https://www.youtube.com/watch?v=cuDRBUVd0C4&ab_channel=GoGoManTV">Porazím sumo Sagana? GoGo vs Sagan ︳micro:battle #3</a></p>
+
+        <p><a target="_blank" href="https://www.youtube.com/watch?v=J5X05EGhyH8&ab_channel=GoGoManTV">Kto bubnuje rýchlejšie? GoGo vs Nikoleta Šurinová ︳micro:battle #4</a></p>
+
+        <p><a target="_blank" href="https://www.youtube.com/watch?v=_1TZNzf1fHw&ab_channel=GoGoManTV">Ktorý je ten správny pár? GoGo vs Bekim ︳micro:battle #5</a></p>
+
+        <p><a target="_blank" href="https://www.youtube.com/watch?v=3__VZ8dq7-s&ab_channel=GoGoManTV">Kto kričí hlasnejšie? GoGo vs Ego ︳micro:battle #6</a></p>
+
+        <p><a target="_blank" href="https://www.youtube.com/watch?v=VLhWF5yXNAI&ab_channel=GoGoManTV">Kto šoféruje lepšie? GoGo vs Michaela Dorčíková | micro:battle #7</a></p>
+
+        <img src="obrazkyprojekt/gogo.jpg" width="30%" alt="GogoManTV">
+
+        <img class="battle" src="obrazkyprojekt/microbattle.png" width="65%" alt="Micro:battle">
+
+
+        <div class="mezera0"></div>
+
+    </section>
+
+<footer>
+    
+</footer>
+
+</body>
+</html>
